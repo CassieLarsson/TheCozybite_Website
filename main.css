@@ -1,0 +1,197 @@
+/*mörkare olive grön a3a380 / ljusare grön d6CE93 / beigegrön efebce/ peachy d8a48F, mörjare rosa bb8588 / logo färg d0cdbf*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #efebce;
+    color: #333;
+}
+header {
+    background: #a3a380  ;/*färgen de vill ha i briefen */
+    text-align: center;
+    padding: 3vw 0; /* Öka padding på toppen och botten */
+}
+header h1 {
+    color: #f9f9f9; /*ändrar färg på The cozy bite */
+    margin-top: 5px; /* Minskar avståndet mellan logotyp och titel */
+}
+
+header p {
+    margin-top: -1.5rem; /* Tar bort extra utrymme mellan the cozy bite och vegan slogan länst upp */
+}
+
+/* Styla header-frukt-bild så att den täcker hela skärmen */
+.header-frukt-bild {
+    position: relative; /* Gör det möjligt att placera bilden korrekt */
+    width: 100%; /* Täcker hela bredden på skärmen */
+    height: 100vh; /* Höjd på hela viewporten */
+    overflow: hidden; /* Förhindrar att bilden "spiller över" */
+}
+
+.header-frukt-bild img {
+    width: 100%; /* Gör så att bilden täcker hela bredden på skärmen */
+    height: 100%; /* Gör så att bilden täcker hela höjden på skärmen */
+    object-fit: cover; /* Gör så att bilden behåller sina proportioner och täcker hela utrymmet */
+}
+
+
+
+.logo img {
+    width: 300px;
+    display: block; /* Tar bort eventuella extra mellanrum från inline-element */
+    margin: 0 auto; /* Centrerar bilden horisontellt */
+    max-width: 80%; /* Begränsar bredden till 80% av förälder-elementet */
+    height: auto; /* Bibehåller proportionerna */
+    margin-top: -90px;/* avstånd mellan texten happier world och logon */
+    margin-bottom: -50px;
+}
+    
+nav {
+    background: #556b2f;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.menu, .about, .contact, .booking, .why-choose-us {
+    padding: 20px;
+    max-width: 1200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    width: auto;
+    
+}
+.menu h2, .about h2, .contact h2, .booking h2, .why-choose-us h2 {
+    color: #556b2f;
+}
+
+
+
+/* ___HEADER BILD MED ALLA FRUKTER -Styling*/
+.header-frukt-bild {
+    text-align: center; /* Centrerar innehållet om du vill ha en centrerad bild */
+    padding: 10px 0; /* Lägg till padding om du vill ha utrymme ovanför och under bilden */
+}
+
+/* Styling för img-taggen */
+.header-frukt-bild img {
+    width: 60%; /* Gör att bilden fyller hela div:en, bibehåller bildens förhållande */
+    height: auto; /* Bibehåller bildens proportioner */
+    object-fit: cover; /* Gör att bilden täcker hela ytan av div:en om det behövs */
+    margin: auto;
+}
+
+
+.contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Bilder/SkogsbildFooter.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+.contact a:hover {
+    text-decoration: underline;
+    color: #f5f5f5;
+}
+
+
+footer {
+    background: #8fbc8f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+ .booking {
+    background: #ffffff; /* Vit bakgrund för ett rent utseende */
+    padding: 30px; /* Rymligt inre utrymme */
+    border-radius: 10px; /* Rundade hörn */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Starkare skugga för djup */
+    max-width: 600px; /* Gör sektionen bredare */
+    margin: 30px auto; /* Centrerar sektionen */
+    font-family: 'Arial', sans-serif; /* Renare typsnitt */
+}
+
+.booking h2 {
+    text-align: center; /* Centrerar rubriken */
+    color: #556b2f; /* Grön färg för rubriken */
+    margin-bottom: 20px; /* Utrymme under rubriken */
+    font-size: 1.5rem; /* Gör rubriken större */
+}
+
+.booking form {
+    display: grid; /* Grid-layout för att strukturera formuläret */
+    grid-template-columns: 1fr 1fr; /* Två kolumner */
+    gap: 20px; /* Utrymme mellan rader och kolumner */
+}
+
+.booking label {
+    font-weight: bold; /* Tydliga etiketter */
+    font-size: 0.9rem; /* Mindre textstorlek */
+    color: #333; /* Mörk text för etiketter */
+    margin-bottom: 5px; /* Utrymme under etiketten */
+    display: block; /* Gör etiketten till blocknivå för att placeras ovanför fältet */
+}
+
+.booking input {
+    padding: 10px; /* Rymliga inmatningsfält */
+    border: 1px solid #ccc; /* Ljus ram */
+    border-radius: 5px; /* Rundade hörn */
+    font-size: 1rem; /* Standardstorlek för text */
+    width: 100%; /* Tar upp hela kolumnbredden */
+    box-sizing: border-box; /* Inkluderar padding i bredd */
+    transition: border-color 0.3s ease; /* Smidig övergång för fokus */
+}
+
+.booking input:focus {
+    border-color: #556b2f; /* Grön ram vid fokus */
+    outline: none; /* Tar bort standardram */
+    box-shadow: 0 0 5px rgba(85, 107, 47, 0.5); /* Liten grön skugga vid fokus */
+}
+
+.booking button {
+    background: #556b2f; /* Grön bakgrund */
+    color: white; /* Vit text */
+    border: none; /* Ingen ram */
+    padding: 15px 20px; /* Rymlig knapp */
+    border-radius: 5px; /* Rundade hörn */
+    font-size: 1rem; /* Standardstorlek för text */
+    font-weight: bold; /* Gör texten tydligare */
+    cursor: pointer; /* Muspekare ändras till hand vid hover */
+    grid-column: span 2; /* Knappen sträcker sig över båda kolumnerna */
+    text-align: center; /* Centrerar texten i knappen */
+    transition: background 0.3s ease; /* Smidig övergång vid hover */
+}
+
+.booking button:hover {
+    background: #6b8f3f; /* Ljusare grön nyans vid hover */
+}
+
+ 
